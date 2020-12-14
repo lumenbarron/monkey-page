@@ -1,0 +1,25 @@
+@import '../../style-globals.scss';
+
+.main-nav {
+    background: $color-neutral-light;
+    .monkey-logo {
+        height: 1.5rem;
+    }
+    .btn-medium-full{
+        width: 40px;
+        height: 40px;
+        background: $azul-roxellana;
+        border-radius: 8px;
+        border: none;
+        color: $branco-uacari;
+    }
+    .btn-medium-border{
+        width: 219px;
+height: 40px;
+border: 1px solid $azul-roxellana;
+box-sizing: border-box;
+border-radius: 8px;
+    }
+}
+
+

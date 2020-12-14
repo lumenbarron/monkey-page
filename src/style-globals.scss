@@ -1,0 +1,40 @@
+//colors
+$color-neutral-darkest : #000000;
+$color-neutral-dark :#747880;
+$color-neutral-medium : #D6D7DA;
+$color-neutral-light : #EFF0F1;
+$color-neutral-lightest : #FFFFFF;
+
+$azul-roxellana : #0273E8;
+$branco-uacari : #FFFFFF;
+$preto-prego : #1E232C;
+$off-black : #364254;
+
+$amarelo-guariba: #E3B839;
+$rosa-mandril : #CE596D;
+$gorilla-roxo : #744DA6;
+$verde-folha : #009966;
+
+$banco-bnp : #009966;
+$banco-bradesco : #CC092F;
+$banco-voiter : #36264D;
+$banco-itau : #EC7000;
+$banco-sofisa : #17B497;
+$banco-inter : #FF8700;
+$icons-blue :  #153446;
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+@mixin flexDirection ($direction) {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: $direction;
+}
+
+//@include flexCenter()
+//@include flexDirection(column)
