@@ -1,3 +1,4 @@
+
 //colors
 $color-neutral-darkest : #000000;
 $color-neutral-dark :#747880;
@@ -23,9 +24,19 @@ $banco-sofisa : #17B497;
 $banco-inter : #FF8700;
 $icons-blue :  #153446;
 
+$gray-600 : #4B4A53;
+$gray-300 : #D6D6D6;
+$gray-100 : #F5F5F5;
+
 @mixin flexCenter {
     display: flex;
     justify-content: center;
+    align-content: center;
+}
+
+@mixin flexSpaceBeetween() {
+    display: flex;
+    justify-content: space-between;
     align-content: center;
 }
 
@@ -34,6 +45,35 @@ $icons-blue :  #153446;
     justify-content: center;
     align-content: center;
     flex-direction: $direction;
+}
+
+@mixin btn-medium-full($height) {
+    width: 40px;
+    height: $height;
+    background: $azul-roxellana;
+    border-radius: 8px;
+    border: none;
+    color: $branco-uacari;
+}
+
+@mixin btn-medium-border($height) {
+    width: 219px;
+    height: $height;
+    border: 1px solid $azul-roxellana;
+    box-sizing: border-box;
+    border-radius: 8px;
+    color :  $azul-roxellana;
+    background: transparent;
+}
+
+@mixin supplier-text($size) {
+    color: $gray-600;
+    font-size: $size;
+}
+
+.first-block{
+    background: $gray-100;
+    border-radius: 2rem;
 }
 
 //@include flexCenter()

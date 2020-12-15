@@ -1,0 +1,10 @@
+@import '../../../style-globals.scss';
+
+.supplier-banner{
+    margin-top: -2.9rem;
+}
+
+.supplier-text{
+@include supplier-text(2rem);
+font-weight: bold;
+}

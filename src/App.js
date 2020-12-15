@@ -1,13 +1,22 @@
-// import logo from './logo.svg';
-// import './App.css';
-import MainNavbar from './components/NavBar/Navbar';
-import './style-globals.scss';
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import Home from './components/Home/Home';
+import AboutUs from './components/AboutUs/AboutUs';
+// import './style-globals.scss';
 
 function App() {
   return (
-    <div className="App">
-<MainNavbar />
-    </div>
+    <Router>
+    <Switch>
+    <Route exact path="/" component={Home} />
+    <Route path="/about" component={AboutUs} />
+  </Switch>
+  </Router>
   );
 }
 

@@ -1,25 +1,27 @@
 @import '../../style-globals.scss';
 
 .main-nav {
-    background: $color-neutral-light;
+    // background: $color-neutral-light;
+    height: 7rem;
+    border-bottom: 0.5px solid $gray-300;
+
     .monkey-logo {
         height: 1.5rem;
     }
-    .btn-medium-full{
-        width: 40px;
-        height: 40px;
-        background: $azul-roxellana;
-        border-radius: 8px;
-        border: none;
-        color: $branco-uacari;
+    .container-nav{
+        @include flexSpaceBeetween();
+        width: 100%;
+        a{
+            color: $gray-600 !important;
+        }
     }
-    .btn-medium-border{
-        width: 219px;
-height: 40px;
-border: 1px solid $azul-roxellana;
-box-sizing: border-box;
-border-radius: 8px;
+    .btn-full-nav{
+        @include btn-medium-full(40px);
     }
+    .btn-border-nav{
+        @include btn-medium-border(40px);
+    } 
+
 }
 
 

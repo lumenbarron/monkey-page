@@ -1,0 +1,21 @@
+@import '../../../style-globals.scss';
+
+.text-container {
+@include  flexDirection(column)
+}
+
+.main-header{
+    color: $azul-roxellana;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.main-text{
+    @include supplier-text(1.25rem);
+}
+.btn-border-header{
+    @include btn-medium-border(48px);
+}
+
+.monkey-banner{
+    padding-bottom: 2.9rem;
+}
