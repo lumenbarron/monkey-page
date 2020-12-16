@@ -14,11 +14,11 @@ import './style.scss';
 export default function Branding() {
     return (
 <Container fluid>
-<Row> <h4 className="brand-text">
+<Row className="container-brand" > <h4 className="brand-text">
 Os melhores acreditam em nossas soluções
 </h4>
 </Row>
-<Row>
+<Row className="container-logo" >
 <img src={natura} className="supplier-banner" alt="natura-company" />
 <img src={philco} className="supplier-banner" alt="philco-company" />
 <img src={ifood} className="supplier-banner" alt="ifood-company" />
