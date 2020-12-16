@@ -8,3 +8,10 @@
 @include supplier-text(2rem);
 font-weight: bold;
 }
+
+.icons-container{
+    width: 60%;
+    position: absolute;
+    right: 0;
+    margin-top: -5%;
+}

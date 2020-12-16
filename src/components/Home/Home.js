@@ -2,6 +2,7 @@ import React from 'react';
 import MainNavbar from '../NavBar/Navbar';
 import MainBanner from './MainBanner/MainBanner';
 import Supplier from './Supplier/Supplier';
+import Branding from './BlockBranding/Branding';
 import '../../style-globals.scss';
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
             </div>
             <div className="px-5" >
                 <Supplier />
+                <Branding />
             </div>
         </div>
     )
