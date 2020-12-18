@@ -2,8 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 import companyBanner from "../../../images/company-banner.png";
-import chart from "../../../images/chart.png";
-import work from "../../../images/work.png";
+import chart from "../../../images/chart.svg";
+import work from "../../../images/work.svg";
 import "./style.scss";
 
 export default function MainCompany() {

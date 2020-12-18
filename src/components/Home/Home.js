@@ -2,7 +2,8 @@ import React from 'react';
 import MainNavbar from '../NavBar/Navbar';
 import MainBanner from './MainBanner/MainBanner';
 import Supplier from './Supplier/Supplier';
-import Branding from './BlockBranding/Branding';
+import BrandingCustomers from './BlockBranding/BrandingCost';
+import BrandingInvestors from './BlockBranding/BrandingInv';
 import MainCompany from './Company/MainCompany';
 import '../../style-globals.scss';
 
@@ -16,11 +17,12 @@ export default function Home() {
             </div>
             <div className="px-5" >
                 <Supplier />
-                <Branding />
+                <BrandingCustomers />
             </div>
         </div>
         <div>
         <MainCompany />
+        <BrandingInvestors />
         </div>
         </section>
     )
