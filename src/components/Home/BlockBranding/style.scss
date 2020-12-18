@@ -1,16 +1,25 @@
-@import '../../../style-globals.scss';
+@import "../../../style-globals.scss";
 
-.container-brand{
+.container-brand {
+  padding-top: 10rem;
+  .container-text {
     @include flexCenter();
+    padding-bottom: 4rem;
+    .brand-text {
+      @include main-text($off-black, 2rem);
+      font-weight: 300;
+    }
+  }
+  .container-logo-one {
+    @include flexSpace(space-around);
+    padding-bottom: 4rem;
+  }
+  .container-logo-two {
+    @include flexSpace(space-around);
+    padding-bottom: 7.5rem;
+  }
 }
-.brand-text{
-    font-weight: 300;
-    font-size: 2rem;
-
-}
-.container-logo{
-    // @include flexSpaceBeetween();
-    justify-content: space-evenly;
-    align-content: center;
-    height: 5rem;
+.brand-size {
+  width: auto;
+  height: 2.5rem;
 }

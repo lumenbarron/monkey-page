@@ -25,6 +25,7 @@ $banco-inter : #FF8700;
 $icons-blue :  #153446;
 
 $gray-600 : #4B4A53;
+$gray-500 : #72717E;
 $gray-300 : #D6D6D6;
 $gray-100 : #F5F5F5;
 
@@ -34,9 +35,9 @@ $gray-100 : #F5F5F5;
     align-content: center;
 }
 
-@mixin flexSpaceBeetween() {
+@mixin flexSpace($space) {
     display: flex;
-    justify-content: space-between;
+    justify-content: $space;
     align-content: center;
 }
 
@@ -64,17 +65,34 @@ $gray-100 : #F5F5F5;
     border-radius: 8px;
     color :  $azul-roxellana;
     background: transparent;
+    font-weight: 650;
 }
 
-@mixin supplier-text($size) {
-    color: $gray-600;
+@mixin main-text($color , $size) {
+    color: $color;
     font-size: $size;
 }
 
+.canva-geral{
+    padding: 3.5rem 3.5rem 0px;
+}
 .first-block{
     background: $gray-100;
     border-radius: 2rem;
 }
 
-//@include flexCenter()
-//@include flexDirection(column)
+.link-style{
+    text-decoration: underline !important;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.border-test{
+    border: 1px solid black;
+}
+
+.title-h2{
+    @include main-text($gray-600, 2rem);
+    font-weight: bold;
+    padding-right: 2rem;
+}

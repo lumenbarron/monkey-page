@@ -3,11 +3,13 @@ import MainNavbar from '../NavBar/Navbar';
 import MainBanner from './MainBanner/MainBanner';
 import Supplier from './Supplier/Supplier';
 import Branding from './BlockBranding/Branding';
+import MainCompany from './Company/MainCompany';
 import '../../style-globals.scss';
 
 export default function Home() {
     return (
-        <div>
+        <section>
+        <div className="canva-geral">
             <div className="first-block px-5" >
                 <MainNavbar />
                 <MainBanner />
@@ -17,5 +19,9 @@ export default function Home() {
                 <Branding />
             </div>
         </div>
+        <div>
+        <MainCompany />
+        </div>
+        </section>
     )
 }

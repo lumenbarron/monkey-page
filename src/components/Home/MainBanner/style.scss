@@ -10,7 +10,8 @@
     font-weight: bold;
 }
 .main-text{
-    @include supplier-text(1.25rem);
+    @include main-text($gray-600, 1.25rem);
+    padding-right: 3rem;
 }
 .btn-border-header{
     @include btn-medium-border(48px);

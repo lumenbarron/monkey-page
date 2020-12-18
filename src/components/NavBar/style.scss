@@ -1,27 +1,22 @@
-@import '../../style-globals.scss';
+@import "../../style-globals.scss";
 
 .main-nav {
-    // background: $color-neutral-light;
-    height: 7rem;
-    border-bottom: 0.5px solid $gray-300;
-
-    .monkey-logo {
-        height: 1.5rem;
+  height: 7rem;
+  border-bottom: 0.5px solid $gray-300;
+  .monkey-logo {
+    height: 1.5rem;
+  }
+  .container-nav {
+    @include flexSpace(space-between);
+    width: 100%;
+    a {
+      color: $gray-600 !important;
     }
-    .container-nav{
-        @include flexSpaceBeetween();
-        width: 100%;
-        a{
-            color: $gray-600 !important;
-        }
-    }
-    .btn-full-nav{
-        @include btn-medium-full(40px);
-    }
-    .btn-border-nav{
-        @include btn-medium-border(40px);
-    } 
-
+  }
+  .btn-full-nav {
+    @include btn-medium-full(40px);
+  }
+  .btn-border-nav {
+    @include btn-medium-border(40px);
+  }
 }
-
-
