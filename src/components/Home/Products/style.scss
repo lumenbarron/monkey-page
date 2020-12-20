@@ -1,0 +1,37 @@
+@import "../../../style-globals.scss";
+
+.first-block {
+  // background: $color-neutral-light;
+  height: 40%;
+}
+.second-block {
+  background: $color-neutral-lightest;
+  height: 60%;
+}
+.products-container {
+  background: $azul-roxellana;
+  padding-left: 5.5rem !important;
+  padding-right: 6rem !important;
+  padding-bottom: 3rem !important;
+  border-radius: 16px 0px 0px 16px;
+  .title-product {
+    padding-left: 3.5rem;
+    h4 {
+      color: $branco-uacari;
+      font-weight: 400 !important;
+    }
+  }
+  .product-card-container {
+    padding-left: 2.5rem;
+    .product-card {
+      background: $gray-100;
+      border: 1px solid $gray-300;
+      box-sizing: border-box;
+      border-radius: 8px;
+      filter: drop-shadow(-8px 12px 28px rgba(21, 52, 70, 0.49));
+    }
+    .product-text {
+      padding: 2rem 1.5rem;
+    }
+  }
+}

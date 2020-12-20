@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
+import Products from '../Products/Products';
 import companyBanner from "../../../images/company-banner.png";
 import chart from "../../../images/chart.svg";
 import work from "../../../images/work.svg";
@@ -8,7 +9,7 @@ import "./style.scss";
 
 export default function MainCompany() {
   return (
-    <Container fluid className="main-company">
+    <Container fluid className="main-company p-0">
       <Row className="row-company">
         <Col lg={6} className="text-container border-test">
           <button className="btn-company mb-3">Âncora</button>
@@ -23,7 +24,7 @@ export default function MainCompany() {
           <Link className="link-style" to="/about">
             Entenda as vantagens de ter um programa.
           </Link>
-          <Row className="icons-container-left">
+          <Row className="icons-container-left m-0">
             <Col>
               <img src={chart} className="pb-3" alt="chart-icon" />
               <h5 className="">Fluxo de Caixa </h5>
@@ -50,6 +51,7 @@ export default function MainCompany() {
           />
         </Col>
       </Row>
+      <Products />
     </Container>
   );
 }

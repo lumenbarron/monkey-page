@@ -18,6 +18,10 @@
     @include flexSpace(space-around);
     padding-bottom: 7.5rem;
   }
+  .container-logo-three {
+    @include flexSpace(space-evenly);
+    padding-bottom: 7.5rem;
+  }
 }
 .brand-size {
   width: auto;

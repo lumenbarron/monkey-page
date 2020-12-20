@@ -5,6 +5,7 @@ import supplierBanner from "../../../images/supplier-banner.png";
 import calendar from "../../../images/calendar.svg";
 import chart from "../../../images/chart.svg";
 import wallet from "../../../images/wallet.svg";
+
 import "./style.scss";
 
 export default function Supplier() {
@@ -61,6 +62,7 @@ export default function Supplier() {
           </p>
         </Col>
       </Row>
+    
     </Container>
   );
 }

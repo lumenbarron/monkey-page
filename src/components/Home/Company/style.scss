@@ -1,30 +1,30 @@
-@import '../../../style-globals.scss';
+@import "../../../style-globals.scss";
 
-.main-company{
-
-    background: $color-neutral-light;
-    .row-company{
-        padding: 0 3.5rem;
-    }
-
-    .company-text-container{
-        @include  flexDirection(column);
-        padding-right: 6rem;
-    }
-    h2{
-        padding-right: 7rem;
-    }
+.main-company {
+  background: $color-neutral-light;
+  h2 {
+    padding-right: 7rem;
+  }
 }
 
-.btn-company{
-    @include btn-medium-full(40px);
-    width: 151px;
+.company-text-container {
+  @include flexDirection(column);
+  padding-right: 6rem;
+}
+.row-company {
+  padding: 0 3.5rem;
+  margin-right: 0;
+  margin-left: 0;
 }
 
-.company-banner{
-    width: inherit;
+.btn-company {
+  @include btn-medium-full(40px);
+  width: 151px;
+  box-shadow: -8px 12px 11px rgba(2, 115, 232, 0.1);
 }
-
-.icons-container-left{
-    padding-top: 4rem;
+.company-banner {
+  width: inherit;
+}
+.icons-container-left {
+  padding: 4rem 0;
 }

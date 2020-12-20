@@ -5,6 +5,7 @@ import Supplier from './Supplier/Supplier';
 import BrandingCustomers from './BlockBranding/BrandingCost';
 import BrandingInvestors from './BlockBranding/BrandingInv';
 import MainCompany from './Company/MainCompany';
+import Investors from './Investors/Investors';
 import '../../style-globals.scss';
 
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
         <div>
         <MainCompany />
         <BrandingInvestors />
+        <Investors />
         </div>
         </section>
     )

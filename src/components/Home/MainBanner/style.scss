@@ -1,7 +1,8 @@
 @import '../../../style-globals.scss';
 
 .text-container {
-@include  flexDirection(column)
+@include  flexDirection(column);
+padding-top: 5.5rem;
 }
 
 .main-header{

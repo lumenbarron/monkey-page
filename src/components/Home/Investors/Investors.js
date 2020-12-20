@@ -1,28 +1,54 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
-import companyBanner from "../../../images/company-banner.png";
+import investorBanner from "../../../images/investor-banner.png";
+import chart from "../../../images/chart.svg";
+import calendar from "../../../images/calendar.svg";
 import "./style.scss";
 
 export default function Investors() {
   return (
-    <Container fluid >
-      <Row>
-        <Col lg={6} className="text-container border-test">
-          <h1 className="main-header">
-            A Monkey ajuda você fornecedor a antecipar Notas Fiscais.
-          </h1>
-          <p className="main-text">
-            Estamos aqui para te ajudar em todos os momentos, providenciamos a
-            melhor taxa para você antecipar sua Nota Fiscal e ter o dinheiro no
-            mesmo dia.
-          </p>
-          <button className="btn-border-header">Saiba Mais</button>
-        </Col>
-        <Col lg={6} className=" border-test">
-          {" "}
-          <img src={mainBanner} className="monkey-banner" alt="monkey-banner" />
-        </Col>
-      </Row>
-    </Container>
+    <Container fluid className="investor-company">
+    <Row className="row-company">
+      <Col lg={6} className="text-container border-test" style={{paddingTop:0}} >
+        <button className="btn-investor mb-3">Investidor</button>
+        <h2 className="title-h2">
+        Aqui na Monkey você investidor tem mais acesso a grandes empresas.
+        </h2>
+        <p className="main-text">
+        Tenha oportunidades de operar em grandes empresas, com uma plataforma ágil, facil e eficaz. Com um onboarding totalmente digital e com controle de cada cadastro.          Aumente o seu prazo de pagamento, e ajude os seus fornecedores a
+          terem uma vida financeira mais saúdavel.
+        </p>
+        <Link className="link-style" to="/about">
+          Entenda as vantagens de ter um programa.
+        </Link>
+        <Row className="icons-container-left m-0">
+          <Col>
+            <img src={chart} className="pb-3" alt="chart-icon" />
+            <h5 className="">Onboarding Online </h5>
+            <p className="supplier-text-icons pr-4">
+            Todos os cadastros de Fornecedor e Âncoras, é feito totalmente online. 
+            </p>
+          </Col>
+          <Col>
+            <img src={calendar} className="pb-3" alt="work-icon" />
+            <h5 className="">Processo Ágil e Fácil</h5>
+            <p className="supplier-text-icons">
+            Uma Plataforma intuitiva,
+e todos processos digitais
+e online.
+            </p>
+          </Col>
+        </Row>
+      </Col>
+      <Col lg={6} className=" border-test">
+        <img
+          src={investorBanner}
+          className="company-banner"
+          alt="company-banner"
+        />
+      </Col>
+    </Row>
+  </Container>
   );
 }
