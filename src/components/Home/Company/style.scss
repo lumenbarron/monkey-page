@@ -17,6 +17,11 @@
   margin-left: 0;
 }
 
+.column-company {
+  @include  flexDirection(column);
+  padding-top: 5.5rem;
+  }
+
 .btn-company {
   @include btn-medium-full(40px);
   width: 151px;
