@@ -2,7 +2,7 @@
 
 .text-container {
 @include  flexDirection(column);
-padding-top: 5.5rem;
+padding-top: 4rem;
 }
 
 .main-header{
@@ -19,4 +19,5 @@ padding-top: 5.5rem;
 
 .monkey-banner{
     padding-bottom: 2.9rem;
+    width: inherit;
 }
