@@ -10,7 +10,7 @@ import "./style.scss";
 export default function Products() {
   return (
     <Container fluid className="p-0">
-      <Row>
+      <Row className="m-0">
         <Col lg={2} className="p-0">
             <Row className="first-block" ></Row>
             <Row className="second-block"></Row>

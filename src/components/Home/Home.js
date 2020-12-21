@@ -6,6 +6,8 @@ import BrandingCustomers from './BlockBranding/BrandingCost';
 import BrandingInvestors from './BlockBranding/BrandingInv';
 import MainCompany from './Company/MainCompany';
 import Investors from './Investors/Investors';
+import News from './News/News';
+import Footer from '../Footer/Footer';
 import '../../style-globals.scss';
 
 export default function Home() {
@@ -25,6 +27,8 @@ export default function Home() {
         <MainCompany />
         <BrandingInvestors />
         <Investors />
+        <News />
+        <Footer />
         </div>
         </section>
     )

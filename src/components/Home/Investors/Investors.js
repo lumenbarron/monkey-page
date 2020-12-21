@@ -8,9 +8,9 @@ import "./style.scss";
 
 export default function Investors() {
   return (
-    <Container fluid className="investor-company">
-    <Row className="row-company">
-      <Col lg={6} className="text-container border-test" style={{paddingTop:0}} >
+    <Container fluid className="investor-company p-0">
+    <Row className="row-company m-0">
+      <Col lg={6} className="text-container border-test p-0" >
         <button className="btn-investor mb-3">Investidor</button>
         <h2 className="title-h2">
         Aqui na Monkey você investidor tem mais acesso a grandes empresas.
@@ -23,7 +23,7 @@ export default function Investors() {
           Entenda as vantagens de ter um programa.
         </Link>
         <Row className="icons-container-left m-0">
-          <Col>
+          <Col >
             <img src={chart} className="pb-3" alt="chart-icon" />
             <h5 className="">Onboarding Online </h5>
             <p className="supplier-text-icons pr-4">
@@ -41,7 +41,7 @@ e online.
           </Col>
         </Row>
       </Col>
-      <Col lg={6} className=" border-test">
+      <Col lg={6} className="p-0 border-test">
         <img
           src={investorBanner}
           className="company-banner"

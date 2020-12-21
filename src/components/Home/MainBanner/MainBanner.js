@@ -19,7 +19,6 @@ export default function MainBanner() {
           <button className="btn-border-header">Saiba Mais</button>
         </Col>
         <Col lg={6} className=" border-test">
-          {" "}
           <img src={mainBanner} className="monkey-banner" alt="monkey-banner" />
         </Col>
       </Row>

@@ -10,8 +10,8 @@ import "./style.scss";
 export default function MainCompany() {
   return (
     <Container fluid className="main-company p-0">
-      <Row className="row-company">
-        <Col lg={6} className="text-container border-test">
+      <Row className="row-company m-0">
+        <Col lg={6} className="text-container border-test p-0">
           <button className="btn-company mb-3">Âncora</button>
           <h2 className="title-h2">
             Aqui na Monkey, denominamos os clientes que são donos de programas
@@ -43,7 +43,7 @@ export default function MainCompany() {
             </Col>
           </Row>
         </Col>
-        <Col lg={6} className=" border-test">
+        <Col lg={6} className="p-0 border-test">
           <img
             src={companyBanner}
             className="company-banner"

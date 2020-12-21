@@ -2,13 +2,14 @@
 
 .container-brand {
   padding-top: 10rem;
+}
   .container-text {
     @include flexCenter();
     padding-bottom: 4rem;
-    .brand-text {
-      @include main-text($off-black, 2rem);
-      font-weight: 300;
-    }
+  }
+  .brand-text {
+    @include main-text($off-black, 2rem);
+    font-weight: 300;
   }
   .container-logo-one {
     @include flexSpace(space-around);
@@ -22,7 +23,7 @@
     @include flexSpace(space-evenly);
     padding-bottom: 7.5rem;
   }
-}
+
 .brand-size {
   width: auto;
   height: 2.5rem;
