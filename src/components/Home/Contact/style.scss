@@ -1,0 +1,36 @@
+@import "../../../style-globals.scss";
+
+.contact-container{
+    padding: 0 3.5rem;
+
+}
+
+.contact-text-container{
+    @include  flexDirection(column);
+    background: $color-neutral-light ;
+    border-radius: 16px 0px 0px 16px;
+}
+
+.contact-form-container{
+    // @include  flexDirection(column);
+    background: $color-neutral-light ;
+    border-radius: 0px 16px 16px 0px;
+}
+
+.contact-header{
+    @include main-text($gray-600, 3rem);
+    font-weight: 700 !important;
+}
+
+.contact-text{
+    @include main-text($gray-600, 1.25rem);
+}
+
+.radio-text{
+    @include main-text($gray-600, 14px);
+}
+
+.submit-button{
+@include btn-medium-full(48px);
+width: 560px;
+}

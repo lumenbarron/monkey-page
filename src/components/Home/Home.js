@@ -7,6 +7,7 @@ import BrandingInvestors from './BlockBranding/BrandingInv';
 import MainCompany from './Company/MainCompany';
 import Investors from './Investors/Investors';
 import News from './News/News';
+import Contact from './Contact/Contact';
 import Footer from '../Footer/Footer';
 import '../../style-globals.scss';
 
@@ -28,6 +29,7 @@ export default function Home() {
         <BrandingInvestors />
         <Investors />
         <News />
+        <Contact />
         <Footer />
         </div>
         </section>

@@ -1,76 +1,42 @@
 @import "../../style-globals.scss";
 
-.footer-container{
-    background: $off-black ;
+.footer-container {
+  background: $off-black;
 }
-
-.row-logo{
-    @include flexCenter();
-    padding: 2.5rem 0;
+.row-logo {
+  @include flexCenter();
+  padding: 2.5rem 0;
 }
-
-.titles-footer{
-    line-height: 24px;
-    padding-bottom: 6rem;
-    h6{
-        color: $branco-uacari;
-        font-size: 18px;
-        font-weight: 400;
-        padding-bottom: 1.5rem;
-    }
-    p{
-        color: $color-neutral-dark;
-        //$gray-400
-    }
+.container-titles {
+  padding: 0 8.8rem;
 }
-
-.radio-input{
+.titles-footer {
+  line-height: 24px;
+  h6 {
+    @include main-text($branco-uacari, 18px);
+    font-weight: 400;
+    padding-bottom: 1.5rem;
+  }
+  p {
+    color: $color-neutral-dark;
+  }
+}
+.container-icons {
+  padding-right: 5rem;
+}
+.copyright-footer {
+  @include main-text($branco-uacari, 14px);
+  a {
+    text-decoration: underline;
     color: $branco-uacari;
-    margin-right: 2.5rem;
+  }
 }
-// .radio-item {
-//     display: inline-block;
-//     position: relative;
-//     padding: 0 6px;
-//     margin: 10px 0 0;
-//   }
-//   .radio-item input[type='radio'] {
-//     // display: none;
-// position: relative;
-//     right: -17px;
-//     top: 2px;
-//   }
-//   .radio-item label {
-//     color: $branco-uacari;
-//     font-weight: normal;
-//   }
-  
-//   .radio-item label:before {
-//     content: " ";
-//     display: inline-block;
-//     position: relative;
-//     top: 5px;
-//     margin: 0 5px 0 0;
-//     width: 20px;
-//     height: 20px;
-//     border-radius: 11px;
-//     border: 2px solid $off-black;
-//     background-color: transparent;
-//   }
-  
-//   .radio-item input[type=radio]:checked + label:after {
-//     border-radius: 11px;
-//     width: 12px;
-//     height: 12px;
-//     position: absolute;
-//     top: 9px;
-//     left: 10px;
-//     content: " ";
-//     display: block;
-//     background: #004c97;
-//   }
-.lenguage-row{
-    @include flexSpace(flex-end);
-    background: $preto-prego;
-    padding: 1.5rem 3.5rem;
+.radio-input {
+  color: $branco-uacari;
+  margin-right: 2.5rem;
+}
+.lenguage-row {
+  @include flexSpace(flex-end);
+  background: $preto-prego;
+  padding: 1.5rem 3.5rem;
 }
